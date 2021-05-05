@@ -20,21 +20,11 @@ body {
   background-size: cover;
 }
 
-.container > * + * {
-  margin-top: 2rem;
-}
-
 #button {
   height: 40vmin;
   width: 40vmin;
   background-color: white;
   border-radius: 9999px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s transform;
-}
-
-#button:hover {
-  transform: scale(1.05);
 }
 
 #button.recording {
@@ -45,6 +35,30 @@ body {
 
 #button.recording:hover {
   transform: unset;
+}
+
+#qr-code {
+  height: 40vmin;
+  width: 40vmin;
+  object-fit: cover;
+  clip-path: circle();
+}
+
+#prompt {
+  margin-top: 2rem;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: ease-in-out 0.2s transform;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes pulse {
