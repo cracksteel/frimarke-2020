@@ -61,6 +61,23 @@ body {
   display: none;
 }
 
+@page {
+  size: A4;
+  magin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 280mm;
+  }
+
+  #prompt {
+    display: none;
+  }
+}
+
 @keyframes pulse {
   from {
     transform: scale(1);
