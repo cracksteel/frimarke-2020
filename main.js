@@ -7,7 +7,7 @@ button.onclick = async () => {
   if (recording) return;
   recording = true;
   button.classList.add("recording");
-  await countdownFrom(5);
+  await countdownFrom(15);
   button.classList.add("hidden");
   qrCode.classList.remove("hidden");
   prompt.textContent = "skriv ut";
